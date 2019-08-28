@@ -1,0 +1,266 @@
+body {
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "head"
+  					   "nav"
+                       "profile" 
+                       "work"
+                       "photo"
+                       "quote"
+                       "foot";
+  grid-template-rows: 1000px 50px 1500px 1200px 1000px 500px 500px;
+  grid-template-columns: auto;
+  background-color: #EEEEEE;
+}
+
+header {
+	grid-area: head;
+	text-align: center;
+	background-size: 100% 100%;
+	background-image: url("../media/tony2.jpg");
+	position: relative;
+}
+footer {
+	grid-area: foot;
+	text-align: center;
+	background-color: #FFFFFF;
+	position: relative;
+}
+.profile {
+	grid-gap: 20px;
+	text-align: center;
+	grid-area: profile;
+	display: grid;
+  margin: auto;
+  width: 1100px;
+  grid-template-areas: "ph ph"
+  					   "child childPhoto"
+                       "uni uniPhoto"
+                       "euro euroPhoto"
+                       "future futurePhoto";
+  grid-template-rows: 50px 300px 300px 300px 300px;
+  grid-template-columns: 5fr 2fr;
+}
+.ph2 {
+	grid-area: ph;
+}
+.child {
+	grid-area: child;
+}
+.childPhoto {
+	grid-area: childPhoto;
+}
+}
+.uni {
+	grid-area: uni;
+}
+.uniPhoto {
+	grid-area: uniPhoto;
+}
+.euro {
+	grid-area: euro;
+}
+.euroPhoto {
+	grid-area: euroPhoto;
+}
+}
+.future {
+	grid-area: future;
+}
+.futurePhoto {
+	grid-area: futurePhoto;
+}
+
+.works-container {
+	grid-area: work;
+	width: auto;
+	background-color: #FFFFFF;
+
+}
+.works {
+	text-align: center;
+	background-color: #FFFFFF;
+	grid-gap: 20px;
+	display: grid;
+  margin: auto;
+
+  width: 1000px;
+  grid-template-areas: "hw hw"
+  					   "webpagPhoto webpag"
+                       "githubPhoto github"
+                       "kagglePhoto kaggle";
+  grid-template-rows: 100px 340px 340px 340px;
+  grid-template-columns: 2fr 5fr;
+}
+.hw {
+	grid-area: hw;
+}
+.webpag {
+	grid-area: webpag;
+}
+.github {
+	grid-area: github;
+}
+.kagglePhoto {
+	grid-area: kagglePhoto;
+}
+.webpagPhoto {
+	grid-area: webpagPhoto;
+}
+.githubPhoto {
+	grid-area: githubPhoto;
+}
+.kagglePhoto {
+	grid-area: kagglePhoto;
+}
+
+
+
+
+.photo {
+	text-align: center;
+	grid-area: photo;
+	background-color: #EEEEEE;
+}
+.quote {
+	text-align: center;
+	grid-area: quote;
+	background-color: #1C6493;
+	color: #FFFFFF;
+}
+h1 {
+	color: rgb(255, 255, 255);
+	font-size: 65px;
+}
+#identity {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%)
+}
+#identity p {
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+}
+
+
+
+.photoDes {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.photoDesGit {
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 70%;
+  align-self: center;
+}
+
+
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.description .para {
+	height: 70%;
+	overflow-y: scroll;
+	align-self: end;
+}
+
+h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4795F4;
+  padding: 10px 0px 10px 10px;
+  display: inline-block;
+}
+
+h2 span:after, span:before{
+    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
+img {
+  width: 100%;
+  height: 100%;
+  
+}
+footer a {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+}
+.contact-footer {
+	position: relative;
+	top: 50%;
+}
+
+
+
+
+/* Add a black background color to the top navigation */
+nav {
+  background-color: #333;
+  /*overflow: hidden;*/
+  grid-area: nav;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  background-color: #144C80;
+  color: white;
+}
+
+
+#photo {
+	grid-area: photo;
+	text-align: center;
+	width: auto;
+}
+
+.photocolection {
+	grid-gap: 0;
+	margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6,300px);
+  grid-template-rows: repeat(3, 295px);
+  width: auto;
+   justify-content: center;
+  grid-auto-flow: row dense;
+}
+.hphoto p {
+	color: #BEC4CA;
+}
+.quote p {
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.quote p a {
+	font-size: 20px;
+	color: #FFFFFF;
+}
