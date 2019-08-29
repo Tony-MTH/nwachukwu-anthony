@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nwachukwu Anthony</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/form-styles.css" />
+</head>
+<body>
+	<!-- Header section -->
+	<header>
+		<div id="identity">
+			<p><em>Hey, I'm</em></p>
+	      	<h1>Anthony Nwachukwu</h1>
+	  	</div>
+    </header>
+	<nav>
+	  <a href="index.html">Home</a>
+	  <a href="#contact-links">Contact links</a>
+	  <a class="active" href="#">Message</a>
+	</nav>
+    <!-- Main page -->
+
+
+    <section id="overlay">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form action="submission.html" method="POST">
+				<h1>Drop your Message Here!</h1>
+        <section class="protein">
+          <label for="patty">What's the subject of your message?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        
+        <section class="patties">
+          <label for="amount">How old are you?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        
+        <section class="cooked">
+          <label for="doneness">Rate my site</label>
+          <br>
+          <span>Bad</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Good</span>
+        </section>
+        <hr>
+        
+        <section class="toppings">
+          <span>How would you want me to contact you?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Phone Call</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Email</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">WhatsApp</label>
+        </section>
+        <hr>
+        
+        <section class="cheesy">
+          <span>Best period to contact you</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Day</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">Night</label>
+        </section>
+        <hr>
+       
+        <section class="bun-type">
+          <label for="bun">How urgent is it?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Very urgent</option>
+            <option value="potatoe">Not too urgent</option>
+            <option value="pretzel">Not urgent</option>
+          </select>
+        </section>
+        <hr>
+        
+        <section class="sauce-selection">
+          <label for="sauce">Purpose of the message</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="academic"></option>
+            <option value="religious"></option>
+            <option value="friendly"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Leave a brief Note</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="contact-links">
+    	<h2><span>Let's Get in Touch</span></h2>
+    	<div class="contact-footer">
+	    	<a href="https://www.linkedin.com/in/anthony-nwachukwu-92185610b/">
+	    		<img alt="linkdln" src="media/linkedin.png">
+			</a>
+			<a href="https://www.facebook.com/nwachukwu.anthony2017">
+	    		<img alt="facebook" src="media/facebook.png">
+			</a>
+			<a href="https://github.com/Tony-MTH/">
+	    		<img alt="github" src="media/github.png">
+			</a>
+			<a href="https://www.kaggle.com/anthonyemeka12">
+	    		<img alt="kaggle" src="media/kaggle.png">
+			</a>
+			<a href="#">
+	    		<img alt="message me" src="media/mail.png">
+			</a>
+		</div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
