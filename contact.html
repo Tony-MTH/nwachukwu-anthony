@@ -7,93 +7,89 @@
 	<link rel="stylesheet" type="text/css" href="CSS/form-styles.css" />
 </head>
 <body>
-	<!-- Header section -->
-	<header>
-		<div id="identity">
-			<p><em>Hey, I'm</em></p>
-	      	<h1>Anthony Nwachukwu</h1>
-	  	</div>
-    </header>
+	<!-- Navigation section -->
 	<nav>
 	  <a href="index.html">Home</a>
 	  <a href="#contact-links">Contact links</a>
 	  <a class="active" href="#">Message</a>
 	</nav>
-    <!-- Main page -->
 
-
+    <!-- Form begins -->
     <section id="overlay">
-      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <img src="media/form-logo.png" alt="message logo" id="logo">
       <hr>
       <form action="submission.html" method="POST">
-				<h1>Drop your Message Here!</h1>
-        <section class="protein">
-          <label for="patty">What's the subject of your message?</label>
-    			<input type="text" name="patty" id="patty">
+
+		<h1>Drop your Message Here!<br><br></h1>
+
+        <section class="message-subject">
+          <label for="subject">What's the subject of your message?</label>
+    			<input type="text" name="subject" id="subject" required>
         </section>
         <hr>
         
-        <section class="patties">
-          <label for="amount">How old are you?</label>
-          <input type="number" name="amount" id="amount">
+        <section class="sender-age">
+          <label for="age">How old are you?</label>
+          <input type="number" name="age" id="age" required>
         </section>
         <hr>
         
-        <section class="cooked">
-          <label for="doneness">Rate my site</label>
+        <section class="site-rating">
+          <label for="rating">Rate my site</label>
           <br>
           <span>Bad</span>
-          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <input type="range" name="rating" id="rating" value="3" min="1" max="5">
           <span>Good</span>
         </section>
         <hr>
         
-        <section class="toppings">
+        <section class="medium-for-contact">
           <span>How would you want me to contact you?</span>
           <br>
-          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
-          <label for="lettuce">Phone Call</label>
-          <input type="checkbox" name="topping" id="tomato" value="tomato">
-          <label for="tomato">Email</label>
-          <input type="checkbox" name="topping" id="onion" value="onion">
-          <label for="onion">WhatsApp</label>
+          <input type="checkbox" name="contact" id="phone" value="phone">
+          <label for="phone">Phone Call</label>
+          <input type="checkbox" name="contact" id="email" value="email">
+          <label for="email">Email</label>
+          <input type="checkbox" name="contact" id="whatsapp" value="whatsapp">
+          <label for="whatsapp">WhatsApp</label>
         </section>
         <hr>
         
-        <section class="cheesy">
+        <section class="time-to-contact">
           <span>Best period to contact you</span>
           <br>
-          <input type="radio" name="cheese" id="yes" value="yes">
+          <input type="radio" name="daytime" id="yes" value="yes">
           <label for="yes">Day</label>
-          <input type="radio" name="cheese" id="no" value="yes">
+          <input type="radio" name="night" id="no" value="yes">
           <label for="no">Night</label>
         </section>
         <hr>
        
-        <section class="bun-type">
-          <label for="bun">How urgent is it?</label>
-          <select name="bun" id="bun">
-            <option value="sesame">Very urgent</option>
-            <option value="potatoe">Not too urgent</option>
-            <option value="pretzel">Not urgent</option>
+        <section class="urgency">
+          <label for="urgency">How urgent is it?</label>
+          <select name="urgency" id="urgency">
+            <option value="very urgent">Very urgent</option>
+            <option value="not-too urgent">Not too urgent</option>
+            <option value="not urgent">Not urgent</option>
           </select>
         </section>
         <hr>
         
-        <section class="sauce-selection">
-          <label for="sauce">Purpose of the message</label>
-          <input list="sauces" id="sauce" name="sauce">
-          <datalist id="sauces">
+        <section class="reason-for-messaging">
+          <label for="purpose">Purpose of the message</label>
+          <input list="purpose" id="purpose" name="purpose" required>
+          <datalist id="purpose">
             <option value="academic"></option>
             <option value="religious"></option>
             <option value="friendly"></option>
           </datalist>
         </section>
         <hr>
-        <section class="extra-info">
-          <label for="extra">Leave a brief Note</label>
+
+        <section class="main-message">
+          <label for="message">Leave a brief Note</label>
           <br>
-          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+          <textarea id="message" name="message" rows="5" cols="40" required></textarea>
         </section>
         <hr>
 
@@ -102,7 +98,7 @@
         </section>
       </form>
     </section>
-
+    <!-- Form ends -->
 
 
 

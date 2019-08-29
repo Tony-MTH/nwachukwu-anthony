@@ -1,42 +1,58 @@
+/* the body session */
 body {
-  background-color: rgb(57, 169, 219);
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "navbar"
+                       "form"
+                       "foot";
+  grid-template-rows: 50px 1000px 500px;
+  grid-template-columns: auto;
+  background-color: #EEEEEE;
   font-family: Rubik, Arial;
 }
 
-form {
-  text-align: center;
-  line-height: 30px;
-  height: 80%;
-  overflow: auto;
+
+/* narvigation bar */
+nav {
+  grid-area: navbar;
 }
 
+
+/* form session */
+form {
+  grid-area: form;
+  text-align: center;
+  line-height: 30px;
+  overflow: auto;
+}
+/* small horizontal dash in form */
 form hr {
-  width: 15%;
+  width: 5%;
 }
 
 h1 {
   text-align: center;
+  color: black;
+  font-size: 30px;
 }
 
 #burger {
   max-height: 30%;
-}
 
+}
+/* the area where the form is housed */
 #overlay {
-  width: 80%;
+  width: 50%;
   margin: 3% auto;
   height: 95vh;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
 }
-
+/* the logo on the form */
 #logo {
   height: 100px;
   display: block;
   margin: auto;
-}
-
-
-.toppings label, .cheesy label {
-  margin-right: 25px;
+  width: 20%;
 }
